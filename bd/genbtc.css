@@ -1,0 +1,101 @@
+/* 11/16/2016 by genBTC */
+/* genBTC.css - Discord CSS mods*/
+/* 7/23/17 */
+/* 11/13/17 member list area changed and form input deprecated */
+
+/* bottom text input area changed */
+.chat form {
+    margin: 0px 5px 2px 10px!important;
+}
+.chat form div {
+    margin: 1px 1.5px 2px 0px!important;
+}
+.chat form div textarea {
+    margin: 0px 0px 0px 5px!important;
+    padding: 12px 0px 0px 0px!important;
+}
+.typing {
+    height: 19px!important;
+    margin: 0px 0px 0px 0px!important;
+}
+/*current channels topic bar*/
+.chat > .title-wrap {
+    min-height:40px!important;   
+}
+
+/* guild header smallen */
+.guild-header > header {
+    height: 40px!important; 
+    padding: 12px 12px!important; 
+}
+
+/* channels list panel (OLD)*/
+/*.channels-wrap {    width: 190px!important; }*/
+/* channels list panel */
+.layer > div > div > div > div {
+    width: 190px!important;
+}
+
+/* remove green download app button in serverlist */
+.btn-download-apps {
+    display: none!important;
+}
+
+/* Left bar (server/guilds list) customization */
+.guilds .guild-inner {
+    margin-top:-5px!important;
+    border-radius:5px!important;
+    border-top-width:0px!important;
+    border-style:solid!important;
+}
+.guilds-wrapper .guilds {
+	padding: 0px 0px 0px 3px!important;
+}
+.guilds-wrapper .guilds .guild .guild-inner a {
+    width: 50px;
+    height: 50px;
+}
+.guilds-wrapper {
+    width:56px !important;/*minimum*/
+    border-right:0px !important;
+    border-style:solid !important;
+}
+
+/* disable un-necessary embed info */
+.embed-provider .embed-author {
+	display:none!important;
+}
+/* Right Bar (Usernames) */
+.channel-members-wrap {
+	min-width:180px!important;
+}
+.channel-members { 
+    max-width:185px!important;
+    padding-bottom:18vh!important;/*minimum*/
+    height:112%!important; /*minimum*/
+}
+.channel-members .avatar-small {
+	width:25px!important;
+	height:25px!important;
+	background-size: 25px 25px!important;
+}
+.channel-members .member {
+	padding: 16px!important;
+    height: 32px!important;
+    line-height: 24px!important;
+}
+
+/* Shrink message blocks in non-compact mode */
+.message-group {
+	padding:8px 0px!important;
+	margin-left:10px!important;
+}
+/* Indent chatmessage names to the left */
+.username-wrapper {
+    margin-left: -13px!important;
+}
+
+/* remove gap around text in the bottom of double-click edit box. */
+.message-group .edit-message .edit-operation {
+    padding: 0!important;
+}
