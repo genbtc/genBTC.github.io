@@ -1,5 +1,7 @@
+# Link Back to Index
+[Index.html](index.html)
 # Servers
-- Using Vultr.com cloud housting provider
+- Using Vultr.com cloud housting provider [My referral link](https://www.vultr.com/?ref=7305525)
 - $2.50 - $5 a month, 20gb,512mb ram, 1TB storage.
 - Also DigitalOcean.com - [My referral link](https://m.do.co/c/712f2fa51673)
 - $5 - 25gb / 1gb RAM / 1tb storage.
