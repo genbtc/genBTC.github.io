@@ -8,3 +8,7 @@
 - A+ Certified (Jan 13 2018)
 - Network+ Certified (2012)
 - Security+ Certified (2013)
+
+## Links to Other Pages: 
+### Servers: [server.MD](server.MD) / [server.MD](server.html)
+
