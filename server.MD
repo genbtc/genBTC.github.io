@@ -1,6 +1,9 @@
-# Link Back to Index
-[Index.html](index.html)
-# Servers
+### Links to Other Pages:
+- ReadMe: [README.MD](README.MD)
+- Index: [index.MD](index.MD)
+- Jan 18,2018 Projects: [2018-1-18.MD](2018-1-18.MD)
+
+## Servers
 - Using Vultr.com cloud housting provider [My referral link](https://www.vultr.com/?ref=7305525)
 - $2.50 - $5 a month, 20gb,512mb ram, 1TB storage.
 - Also DigitalOcean.com - [My referral link](https://m.do.co/c/712f2fa51673)
@@ -8,11 +11,11 @@
 - Apps they offer, that I set up manually - on Debian 9:
 - NextCloud (Apache2/MySql(MariaDB)/PHP 7)
 - Webmin/Usermin
-- Twitter Link: 
+- Twitter Link:
 `Easily deploy an SSD cloud server on @DigitalOcean in 55 seconds. Sign up using my link and receive $10 in credit:`[My referral link](https://m.do.co/c/712f2fa51673)
 
 
-# Instructions to set up a server:
+## Instructions to set up a server:
 - Make sure an available DNS domain name is registered
 - Assign the FQDN hostname in the cloud provider before deploying
 - Pick all the default settings to deploy a raw image of the latest distros:
@@ -23,7 +26,7 @@ Debian 9, Centos 7, or Ubuntu 17.10 (the commands will have to be adapted accord
 ### Sudo & SSH
 - `nano /etc/sudoers` add yourname
 - logout and back in on the other yourname account
-- SSH Keys added to ``~/.ssh/authorized-keys`
+- SSH Keys added to `~/.ssh/authorized-keys`
 - if this is an important user, possibly Generate our yourname SSH key `~/.ssh/id_RSA.pub`
 ### Node.js:
 - `apt-get install build-essential curl git m4 ruby texinfo libbz2-dev libcurl4-openssl-dev libexpat-dev libncurses-dev zlib1g-dev` (this was debian 9)
@@ -64,6 +67,7 @@ Debian 9, Centos 7, or Ubuntu 17.10 (the commands will have to be adapted accord
 1. System log viewer, dashboard, status overview (top)
 
 -(alternative would be CPanel, etc.)
+
 ### NextCloud
 - Follow this official but INCOMPLETE guide @ https://docs.nextcloud.com/server/12/admin_manual/installation/source_installation.html
 - wget the latest .zip from the site above nextcloud-12.0.4.zip to download

@@ -1,3 +1,8 @@
+### Links to Other Pages:
+- Index: [index.MD](index.MD)
+- Servers: [server.MD](server.MD)
+- Jan 18,2018 Projects: [2018-1-18.MD](2018-1-18.MD)
+
 # genBTC.github.io
 genBTC github.io files for BetterDiscord etc public repo and current website project
 
