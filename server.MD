@@ -1,9 +1,13 @@
 # Servers
 - Using Vultr.com cloud housting provider
-- $2.50 - $5 a month, 25gb,512mb ram, 1TB storage.
-- Apps they offer, that I set up - on Debian 9:
+- $2.50 - $5 a month, 20gb,512mb ram, 1TB storage.
+- Also DigitalOcean.com - [My referral link](https://m.do.co/c/712f2fa51673)
+- $5 - 25gb / 1gb RAM / 1tb storage.
+- Apps they offer, that I set up manually - on Debian 9:
 - NextCloud (Apache2/MySql(MariaDB)/PHP 7)
 - Webmin/Usermin
+- Twitter Link: 
+`Easily deploy an SSD cloud server on @DigitalOcean in 55 seconds. Sign up using my link and receive $10 in credit:`[My referral link](https://m.do.co/c/712f2fa51673)
 
 
 # Instructions to set up a server:
