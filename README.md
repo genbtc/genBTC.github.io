@@ -1,4 +1,5 @@
 ### Links to Other Pages:
+- Résumé: [resume.MD](resume.MD)
 - Index: [index.MD](index.MD)
 - Servers: [server.MD](server.MD)
 - Jan 18,2018 Projects: [2018-1-18.MD](2018-1-18.MD)

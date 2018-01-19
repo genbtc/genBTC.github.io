@@ -1,5 +1,5 @@
 ### Links to Other Pages:
-- ReadMe: [README.MD](README.MD)
+- Résumé: [resume.MD](resume.MD)
 - Index: [index.MD](index.MD)
 - Jan 18,2018 Projects: [2018-1-18.MD](2018-1-18.MD)
 
