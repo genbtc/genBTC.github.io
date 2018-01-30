@@ -1,6 +1,3 @@
-<head>
-<title>Abei Villafane</title>
-</head>
 Abei Villafane
 ### Links to Other Pages:
 - Résumé: [resume.MD](resume.MD)
