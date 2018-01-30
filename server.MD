@@ -70,15 +70,17 @@ Debian 9, Centos 7, or Ubuntu 17.10 (the commands will have to be adapted accord
 
 ### NextCloud
 - Follow this official but INCOMPLETE guide @ https://docs.nextcloud.com/server/12/admin_manual/installation/source_installation.html
-- wget the latest .zip from the site above nextcloud-12.0.4.zip to download
-- unzip it in your dir and `sudo cp -R nextcloud /var/www/` over to /var/www/
+- wget the latest .zip `wget https://download.nextcloud.com/server/releases/nextcloud-12.0.4.zip`
+- unzip it in your dir and `sudo cp -R nextcloud /var/www/` over to /var/www/nextcloud
 - make a `nextcloud.conf` file for apache
-- perms on the data/ folder need to be set for www-data write access 755.
-- `chown -R www-data:www-data /var/www/nextcloud/`
 - set up MariaDB For database nextcloud, username nextclouduser, assign a password, and un-deny from that user so they can login.(series of commands)
+- if you ever need to reinstall nextcloud you can just delete the folder `rm -rf nextcloud` and in MySQL do: `DROP DATABASE nextcloud;` and just re `CREATE DATABASE nextcloud;` no other commands needed.
 - https://community.time4vps.eu/discussion/110/nextcloud-nextcloud-12-0-installation-with-mariadb-and-php-7-1
 - MariaDB is port 3306 by default, you dont need to allow it outside
 - edit the /etc/php/7.0/.../php.ini files and insert the specialized commands it wants to remove all the errors.
 - make sure your SSL self-certs are OK, your firewall is port allowed on the 443 HTTPS port, and your webserver and SSL 443 on port working
+- This allows access to the web Configuration `chown -R www-data:www-data /var/www/nextcloud/`
 - connect to https://yourdomain:443/nextcloud/ to continue the setup. Type in the passwords.
+- make sure your data folder is outside the www-root, I recommend `/var/nextcloud`
 - any other questions, or for Nginx instead refer to : https://www.vultr.com/docs/how-to-install-nextcloud-12-on-debian-9
+- visit the scan website to confirm an A+ or A security rating: https://scan.nextcloud.com
