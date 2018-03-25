@@ -192,3 +192,5 @@ Nmap done: 1 IP address (1 host up) scanned in 81.44 seconds
 
 ### Copy with (verbose, permissions, timestamps, links, dirs, human readable, Partial Progress)
 `$ rsync -vptldhP *.mrimg /mnt/Media/ `
+(above Was not working, below was)
+`$ rsync -rtlzuv --progress /mnt/Software/*.mrimg /mnt/Media/mrimg/ `
