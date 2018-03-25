@@ -7,7 +7,7 @@ try{
     ipcRenderer['sendToHost']('message-discord', {
         count: t
     })
-} catch (err) { console.log(err); }
+} catch (err) { console.log("Franz-Error Reading Discord Unread Messages Badge: " + err); }
 }
 //
 var _require = require('electron'), ipcRenderer = _require['ipcRenderer'], path = require('path');
@@ -69,6 +69,19 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
     (function () {
         function injectJs() {
+
+            console.log("BetterDiscord Stage 3: Loading DoubleClickEdit2 plugin...");
+            var script6 = document.createElement("script");
+            script6.type = "text/javascript";
+            script6.src = "https://genbtc.github.io/bd/dblClickEdit2.plugin.js";
+            document.head.appendChild(script6);
+
+            console.log("BetterDiscord Stage 3: Loading MediaSupport2 plugin...");
+            var script5 = document.createElement("script");
+            script5.type = "text/javascript";
+            script5.src = "https://genbtc.github.io/bd/mediaSupport2.plugin.js";
+            document.head.appendChild(script5);
+            
             console.log("BetterDiscord Stage 3: Downloading BetterDiscord CSS & main script...");
             //Load the BD script itself (had to copy it from URL below and edit a bit)
             var script3 = document.createElement("script");
@@ -94,17 +107,6 @@ document.addEventListener('DOMContentLoaded', function () {
             css2.href = "https://genbtc.github.io/bd/genbtc.css";
             document.head.appendChild(css2);
 
-            console.log("BetterDiscord Stage 3: Loading DoubleClickEdit2 plugin...");
-            var script6 = document.createElement("script");
-            script6.type = "text/javascript";
-            script6.src = "https://genbtc.github.io/bd/dblClickEdit2.plugin.js";
-            document.head.appendChild(script6);
-
-            console.log("BetterDiscord Stage 3: Loading MediaSupport plugin...");
-            var script5 = document.createElement("script");
-            script5.type = "text/javascript";
-            script5.src = "https://genbtc.github.io/bd/mediaSupport.plugin.js";
-            document.head.appendChild(script5);
 
         }
         function jqDefer() {
@@ -153,12 +155,12 @@ document.addEventListener('DOMContentLoaded', function () {
             console.log("BetterDiscord Stage 5: Final: Core() exists, starting mainCore() automatically!");
             document.mainCore = new Core();
             document.mainCore.init();
-            // var script5 = document.createElement("script");
-            // script5.innerHTML = '\
-                // var mainCore = document.mainCore;\
-              // ';
-            // script5.id = "Stage5Loaded";
-            // document.head.appendChild(script5);
+            var script5 = document.createElement("script");
+            script5.innerHTML = '\
+                var mainCore = document.mainCore;\
+              ';
+            script5.id = "Stage5Loaded";
+            document.head.appendChild(script5);
 
             //Apply CSS Fixes with jQuery that we couldnt apply in the normal way.
             var f1 = $("[class*=emojiButtonNormal]").filter(function() { return $(this).css('top') == '11.5px'; });
