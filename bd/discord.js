@@ -1,4 +1,5 @@
 function getMessages() {
+try{
     for (var e = document['getElementsByClassName']('guilds-wrapper')[0]['getElementsByClassName']('badge'), t = 0, r = 0; r < e['length']; r++) {
         var n = parseInt(e[r]['innerText']['replace'](/[^0-9.]/g, ''));
         n > 0 && t++
@@ -6,6 +7,7 @@ function getMessages() {
     ipcRenderer['sendToHost']('message-discord', {
         count: t
     })
+} catch (err) { console.log(err); }
 }
 //
 var _require = require('electron'), ipcRenderer = _require['ipcRenderer'], path = require('path');
@@ -25,19 +27,9 @@ document.addEventListener('DOMContentLoaded', function () {
     script1.type = "text/javascript";
     script1.src = "https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js";
     document.head.appendChild(script1);
-
-    console.log("BetterDiscord Stage 1: Loading MediaSupport2 plugin...");
-    var script5 = document.createElement("script");
-    script5.type = "text/javascript";
-    script5.src = "https://genbtc.github.io/bd/mediaSupport2.plugin.js";
-    document.head.appendChild(script5);
-
-    console.log("BetterDiscord Stage 1: Loading DoubleClickEdit plugin...");
-    var script6 = document.createElement("script");
-    script6.type = "text/javascript";
-    script6.src = "https://genbtc.github.io/bd/dblClickEdit.plugin.js";
-    document.head.appendChild(script6);
-
+    
+    //Needed these because main2 had REACT-DOM stuff coming from NODE-js through electron
+    // Main3 uses internal WebPack from a remote url:    
     // console.log("BetterDiscord Stage 1: Loading React.js ...");
     // var script7 = document.createElement("script");
     // script7.type = "text/javascript";
@@ -95,12 +87,25 @@ document.addEventListener('DOMContentLoaded', function () {
             css1.href = "https://genbtc.github.io/bd/main.css";
             document.head.appendChild(css1);
 
-            //Direct Load a CSS file to modify discord's appearance here
+            //Direct Load a personal CSS file to modify discord's appearance here
             var css2 = document.createElement("link");
             css2.rel = "stylesheet";
             css2.type = "text/css";
             css2.href = "https://genbtc.github.io/bd/genbtc.css";
             document.head.appendChild(css2);
+
+            console.log("BetterDiscord Stage 3: Loading DoubleClickEdit2 plugin...");
+            var script6 = document.createElement("script");
+            script6.type = "text/javascript";
+            script6.src = "https://genbtc.github.io/bd/dblClickEdit2.plugin.js";
+            document.head.appendChild(script6);
+
+            console.log("BetterDiscord Stage 3: Loading MediaSupport plugin...");
+            var script5 = document.createElement("script");
+            script5.type = "text/javascript";
+            script5.src = "https://genbtc.github.io/bd/mediaSupport.plugin.js";
+            document.head.appendChild(script5);
+
         }
         function jqDefer() {
             if (window.jQuery) {
@@ -114,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function () {
         jqDefer();
     })();
 });
-/*
+
 //BetterDiscord: Stage 4
 document.addEventListener('DOMContentLoaded', function () {
     (function () {
@@ -139,7 +144,7 @@ document.addEventListener('DOMContentLoaded', function () {
         jqDefer();
     })();
 });
-*/
+
 //BetterDiscord: Stage 5
 document.mainCore = null;
 document.addEventListener('DOMContentLoaded', function () {
@@ -148,12 +153,12 @@ document.addEventListener('DOMContentLoaded', function () {
             console.log("BetterDiscord Stage 5: Final: Core() exists, starting mainCore() automatically!");
             document.mainCore = new Core();
             document.mainCore.init();
-            var script5 = document.createElement("script");
-            script5.innerHTML = '\
-                var mainCore = document.mainCore;\
-              ';
-            script5.id = "Stage5Loaded";
-            document.head.appendChild(script5);
+            // var script5 = document.createElement("script");
+            // script5.innerHTML = '\
+                // var mainCore = document.mainCore;\
+              // ';
+            // script5.id = "Stage5Loaded";
+            // document.head.appendChild(script5);
 
             //Apply CSS Fixes with jQuery that we couldnt apply in the normal way.
             var f1 = $("[class*=emojiButtonNormal]").filter(function() { return $(this).css('top') == '11.5px'; });

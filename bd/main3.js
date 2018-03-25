@@ -79,6 +79,7 @@ var ffzEmoteUrlEnd = "/1";
 var bttvEmoteUrlStart = "https://cdn.betterttv.net/emote/";
 var bttvEmoteUrlEnd = "/1x";
 
+//This is important because it carries over where kept we new Core().init() loaded it from Franz's discord.js 
 var mainCore = document.mainCore;
 
 var settings = {
