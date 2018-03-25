@@ -40,6 +40,31 @@ window.bdPluginStorage.set = function(pn, i, v) {
     console.log(event);
     console.log(arg);
 }); */
+var _cfg = {};
+_cfg.version = "0.2.81";
+var bdVersion = "0.2.81";
+_cfg = {
+    "repo": "Jiiks",
+    "branch": null,
+    "beta": false,
+    "local": false,
+    "localServer": "http://localhost",
+    "version": "0.2.81",
+    "updater": null,
+    "hash": null,
+    "dataPath": null,
+    "userFile": null,
+    "os": null,
+    "cache": {"expired": true, "days": 0},
+    "defaultCfg": {"cache": null},
+    "userCfg": {"cache": null}
+};
+var bdplugins = {};
+var bdthemes = {};
+var plugin1 = new mediaSupport();
+bdplugins[plugin1.getName()] = { "plugin": plugin1, "enabled": true };
+var plugin2 = new dblClickEdit();
+bdplugins[plugin2.getName()] = { "plugin": plugin2, "enabled": true };
 
 var settingsPanel, emoteModule, utils, quickEmoteMenu, opublicServers, voiceMode, pluginModule, themeModule, customCssEditor, dMode;
 var jsVersion = 1.792;
