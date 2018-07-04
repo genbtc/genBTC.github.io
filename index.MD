@@ -1,20 +1,14 @@
-Abei Villafane
+genBTC / genr8
+<a href="https://genbtc.github.io">https://genbtc.github.io (This site = Github Pages)</a> /
 ### Links to Other Pages:
 - Résumé: [resume.MD](resume.MD)
 - Servers: [server.MD](server.MD)
 - Jan 18,2018 Projects: [2018-1-18.MD](2018-1-18.MD)
 
 <h5>My Other Redirected Websites</h5>
-<a href="http://abei-villafane.online">http://abei-villafane.online</a> /
-<a href="http://abei-villafane.site">http://abei-villafane.site</a> /
-<a href="http://abei-villafane.us">http://abei-villafane.us</a> /
-<a href="http://abei-villafane.website">http://abei-villafane.website</a> /
-<a href="http://autotrimps.site">http://autotrimps.site</a> /
-<a href="http://mrlithium.site">http://mrlithium.site</a> /
-<a href="https://genr8.pw">https://genr8.pw (this site)</a> /
+<a href="https://genr8.pw">https://genr8.pw/blog (personal blog site)</a> /
 <h5>My Actual Other Website</h5>
-<a href="https://genbtc.github.io">https://genbtc.github.io (Github Pages)</a> /
-<a href="https://mrlithium.blogspot.com">https://mrlithium.blogspot.com (Blogger)</a>
+<a href="https://mrlithium.blogspot.com">https://mrlithium.blogspot.com (public Blogger)</a>
 
 1. Domains are bought for personal name, and private nicknames and public project.
 1. The genr8.pw server is mostly set up, with Apache PHP/MySQL, WordPress for now.

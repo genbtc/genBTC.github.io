@@ -1,8 +1,4 @@
-### Resume for Abei Villafañe - January 19, 2018
-Abei Villafane <br>
-East Brunswick, NJ 08816 <br>
-E-mail: [abei.villafane+resume@gmail.com](mailto:abei.villafane+resume@gmail.com) <br>
-
+### Resume for genBTC / genr8 
 #### Summary of Qualifications:
 
 System Administrator, IT Consulting, Tech Support, Field Service
@@ -14,7 +10,7 @@ System Administrator, IT Consulting, Tech Support, Field Service
 - Excellent typing skills (~100 WPM)
 - Native speaker of English; articulate and with a strong grammar and writing background.
 - Maintains a diverse skill set, learning new tasks with ease
-- Has a reliable vehicle, for transportation.
+- Has a reliable vehicle for transportation, and valid license.
 
 #### Education:
 - CompTIA Industry Certification Exams (A+ Jan2018/Oct2011, Network+ Mar2012, Security+ March2013) ID#:COMP001020332000 - ACTIVE! - Recently re-certified A+ January 11, 2018 & January 13 2018
@@ -29,8 +25,7 @@ System Administrator, IT Consulting, Tech Support, Field Service
 - Networking: CAT5e/6 cables, modems, routers, switches, wiring. Network+ Certification
 
 #### Experience:
-2017 - Unemployed, looking for work <br>
-2011 - 2016	**Self Employed @ AV Computer**, LLC <br>
+2011 - Present	**Self Employed @ AV Computer**, LLC <br>
 - Field Service Technician (repairing PCs)
 - General IT Consulting
 - Remote Login Tech Support
